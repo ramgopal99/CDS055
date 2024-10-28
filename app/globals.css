@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #ffffff; /* Set background to white */
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ededed; /* Keep foreground color for dark mode */
+    /* Removed dark background */
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--background); /* Background remains white */
   font-family: Arial, Helvetica, sans-serif;
 }
